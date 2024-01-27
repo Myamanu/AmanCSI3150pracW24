@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Website</title>
+    <!--This is a comment in html-->
+    <!--Insert or link other files like css or js-->
+  </head>
+  <body>
+    <!--Division in the pages-->
+    <!--To create a unique label for an html element use attribute: id-->
+    <!--To create a grouping label for a set of html elements use attribute: class-->
+    <!--For any ement you can give an id as well as a class label-->
+    <!--Note about div=div is meaningless tag, it does nont convey any meaning, 
+      it is only there to create division or sections in your html document-->
+    <div id="the-first-div-container" class="container">This is some content inside a div tag</div>
+
+    <!--Heading in html-->
+    <!--Thereare different six levels of heading. going fom h1-h6...with each levels as you go down 
+      reduces emphousis of the content that you create in your html document ...html is not case sensitive -->
+    <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h3>Hello World!</h3>
+    <h4>Hello World!</h4>
+    <h5>Hello World!</h5>
+    <h6>Hello World!</h6>
+
+    <!--Text insertion-->
+    <p>This is a para text</p>
+    <p class="container">This is a para text</p>
+    <span>This is a text in a span tag</span>
+    <span>This is a 2nd span tag</span>
+    <!--Based on display html tags are divided into two 1. Block tags=after render you get new 
+      line(E.g div, P) 2. Inline tags=no newline after rendering(E.g span, anchor tag 0r <a>), label-->
+   
+    <!--images tag requires srs and alt attribute and attributes are always sibling to ariginal tag 
+      in DOM strucyure alt attribute give discribtion of what the image is all about-->
+
+    <img 
+    src="./assets/Mickey Mouse.jpg" 
+    alt="This is an image of Mickey Mouse"
+    />
+
+    <!--Link to other websites / your own pages / any locations on a page-->
+    <!--This is an example of absolute path-->
+    <!--This will takes you to the new websites-->
+    <!--Hyper reference is express with hyper reference and and given as a tag and a tag requires an attribute
+    href =used to point to resorse , aonother attribute is called target="black, parent, self, top" comes 
+  up with different options how to open the hyper reference-->
+    <a href="https://oakland.edu" target="" class="anchor-tag-family"> Here is the link to oakland Univerity</a>
+
+    <!--to link to someones website-->
+    <!--This is an example of relative path-->
+    <!--This will takes you to the new page but with in your domain-->
+    <a href="./html/projects.html" class="anchor-tag-family"> Here is the link to my project</a>
+
+    <!--to link to my project-different section on the same page on diffent areas-->
+    <!--This is an example of absolute path-->
+    <!--This will takes you to traverse in the same page-->
+    <a href="#app-container" class="anchor-tag-family"> Here is the link to the app container div</a>
+    <!--to link to any location in a page use # and the 
+    the id name in a dev in the case of this page the id is 'app container' go and check the dev tag in 
+    this page-->
+    
+    <!--Horizontal rule-->
+    <hr />
+
+    <!--forced newline to be rendered in the browser-->
+    <br />
+    <br />
+    <br />
+
+    <!--Create lists in our html doc--There are 2 types ordered list = ol and unordered list = ul-->
+    <!--ordered list =. list env't is creaed by combination of two types one wich opes the list and
+    one which outlines each individual item that are going to be present in the list-->
+    <!--To use short cut we use emmit help us to generate the code e.g ol>li*4-->
+    <p>This is my to do list for today in order</p>
+    <ol>
+        <li>study</li>
+        <li>Play</li>
+        <li>cloress</li>
+    </ol>
+    <p>This is an example of  an unordered list</p>
+    <!--you can use ul>li*4-->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!--in emmet abbrevation use # character for id attribute-->
+    <!--in emmet abbrevation use . character for class attribute-->
+    <!--in emmet abbrevation use > character for for expressing immediate child node-->
+    <!--E.g=>you can use ul#unordered-list-todo.list-items>li.itemsli*4>-->
+    ul#unordered-list-todo.list-items>li.items*4
+    
+    <hr />
+    <br />
+    <br />
+    <br />
+
+    <!--from elements in html : The way to let users provide input-->
+    <form method="get" action="localhost/login/">
+        <label>for"user-email-field">please Enter your email id:</label>
+        <input type="email"name="" value"" id=""/>
+        <!--Checkboxes-->
+        <p Choose your fav fruit: </p>
+        <!--Radio button-->
+        <p>Pick one sport from the following options</p>
+
+        <input type="radio" name="sports" id="football" value="football" />
+        <label for="football">football</label>
+        <input type="radio" name="sports" id="football" value="football" />
+        <label for="football">football</label>
+        <input type="radio" name="sports" id="hockey" value="football" />
+        <label for="football">football</label>
+        <!--submission BUTTON-->
+        <button type="submit">SUBMIT</button>
+        <!--How to create tables in html-->
+        <!--semmantic html tags : very important for a good html developer:.-->
+        <br />
+        <br />
+        <br />
+        <br />
+    </form>
+    <!--How to   create table in html-->bold font is </b>b></b>
+    <!--html tag for bold font is </b>....</b> however do not use it---cos styling and presentation is work of css not html -->
+    <!--Please review as self study ---rowspan and colspan===>self study-->
+    
+    <table border="2"> 
+      <thead>
+          <tr>
+            <th>S.NO </td>
+            <th>Name </td>
+            <th>Salarry </td>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>123 </td>
+            <td>JHON </td>
+            <td>300 </td>
+         </tr>
+         <tr>
+           <td>456 </td>
+           <td>James </td>
+           <td>200</td>
+         </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+           <td></td>
+           <td>Total salary </td>
+           <td>500</td>
+         </tr>
+      </tfoot>
+    </table>
+
+    <!--Semantic html tags: very important for a good developer -->
+    <!--See notes in recording for semantic tag usage to structure the webpage  Recording under 01/16/2024-->
+    <!-- Multimedia embedding for html-->>
+    <!--audio files===>go to web browser and write mp3 oudio sample then dowload it and save it under assets--you can 
+      write under oudio tag <<outoplay>>-->
+    <audio src="./assets/audio_sample.mp3" controls> 
+      This is a sample aodio file
+    </audio>
+    <br />
+    <!--video file====> go to web browser and write mpeg video sample then download it and save it under asset=>
+    for outoplay option you can write <<aotoplay>> under video tag-->
+    <!--embeded-->
+    <video src="../assets/video_sample.mpeg" 
+    width="200%"
+    height="400px"
+    controls
+    >
+    Your browser does not support the embedded video file
+
+   </video>
+   <br />
+
+   <!--embed other files like pdf files or website on your on your website-->
+   <iframe
+   src="../assets/sample_pdf_file.pdf" 
+   width="100%"
+   height="400px"
+   frameborder="0">
+  your browse does not support inframe embeding
+   </iframe>
+   <iframe
+   src="https://www.oakland.edu" 
+   width="100%"
+   height="400px"
+   frameborder="0">
+  your browse does not support inframe embeding
+   </iframe>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br />
+</body>
+</html>

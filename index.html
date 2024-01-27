@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Website</title>
+    <!--This is a comment in html-->
+    <!--Insert or link other files like css or js-->
+  </head>
+  <body>
+    <!--Division in the pages-->
+    <!--To create a unique label for an html element use attribute: id-->
+    <!--To create a grouping label for a set of html elements use attribute: class-->
+    <!--For any ement you can give an id as well as a class label-->
+    <!--Note about div=div is meaningless tag, it does nont convey any meaning, 
+      it is only there to create division or sections in your html document-->
+    <div id="the-first-div-container" class="container">This is some content inside a div tag</div>
+
+    <!--Heading in html-->
+    <!--Thereare different six levels of heading. going fom h1-h6...with each levels as you go down 
+      reduces emphousis of the content that you create in your html document ...html is not case sensitive -->
+    <h1>Hello World!</h1>
+    <h2>Hello World!</h2>
+    <h3>Hello World!</h3>
+    <h4>Hello World!</h4>
+    <h5>Hello World!</h5>
+    <h6>Hello World!</h6>
+
+    <!--Text insertion-->
+    <p>This is a para text</p>
+    <p class="container">This is a para text</p>
+    <span>This is a text in a span tag</span>
+    <span>This is a 2nd span tag</span>
+    <!--Based on display html tags are divided into two 1. Block tags=after render you get new 
+      line(E.g div, P) 2. Inline tags=no newline after rendering(E.g span, anchor tag 0r <a>), label-->
+   
+    <!--images tag requires srs and alt attribute and attributes are always sibling to ariginal tag 
+      in DOM strucyure alt attribute give discribtion of what the image is all about-->
+
+    <img 
+    src="./assets/Mickey Mouse.jpg" 
+    alt="This is an image of Mickey Mouse"
+    />
+
+    <!--Link to other websites / your own pages / any locations on a page-->
+    <!--This is an example of absolute path-->
+    <!--This will takes you to the new websites-->
+    <!--Hyper reference is express with hyper reference and and given as a tag and a tag requires an attribute
+    href =used to point to resorse , aonother attribute is called target="black, parent, self, top" comes 
+  up with different options how to open the hyper reference-->
+    <a href="https://oakland.edu" target="" class="anchor-tag-family"> Here is the link to oakland Univerity</a>
+
+    <!--to link to someones website-->
+    <!--This is an example of relative path-->
+    <!--This will takes you to the new page but with in your domain-->
+    <a href="./html/projects.html" class="anchor-tag-family"> Here is the link to my project</a>
+
+    <!--to link to my project-different section on the same page on diffent areas-->
+    <!--This is an example of absolute path-->
+    <!--This will takes you to traverse in the same page-->
+    <a href="#app-container" class="anchor-tag-family"> Here is the link to the app container div</a>
+    <!--to link to any location in a page use # and the 
+    the id name in a dev in the case of this page the id is 'app container' go and check the dev tag in 
+    this page-->
+    
+    <!--Horizontal rule-->
+    <hr />
+
+    <!--forced newline to be rendered in the browser-->
+    <br />
+    <br />
+    <br />
+
+    <!--Create lists in our html doc--There are 2 types ordered list = ol and unordered list = ul-->
+    <!--ordered list =. list env't is creaed by combination of two types one wich opes the list and
+    one which outlines each individual item that are going to be present in the list-->
+    <!--To use short cut we use emmit help us to generate the code e.g ol>li*4-->
+    <p>This is my to do list for today in order</p>
+    <ol>
+        <li>study</li>
+        <li>Play</li>
+        <li>cloress</li>
+    </ol>
+    <p>This is an example of  an unordered list</p>
+    <!--you can use ul>li*4-->
+    <ul>
+        <li>Drum</li>
+        <li>Piano</li>
+        <li>Guitar</li>
+        <li>Montarbo</li>
+    </ul>
+    <!--in emmet abbrevation use # character for id attribute-->
+    <!--in emmet abbrevation use . character for class attribute-->
+    <!--in emmet abbrevation use > character for for expressing immediate child node-->
+    <!--E.g=>you can use ul#unordered-list-todo.list-items>li.itemsli*4>-->
+    <ul id="unordered-list-todo" class="list-items">
+  
+      <li class="items">Study</li>
+      <li class="items">Play</li>
+      <li class="items">Phores</li>
+      <li class="items">Sleep</li>
+    </ul>
+
+    <hr />
+
+    <br />
+    <br />
+    <br />
+
+    <!--from elements in html : The way to let users provide input.../>
+    <!There is no concept of variable in html-->
+    <form method="get" action="localhost/login/">
+        <label for="user-email-field">Please Enter your email id:</label>
+        <input 
+          type="email"
+          name="user-email-field" 
+          value="" 
+          id="user-email-field"
+          placeholder="abc@gmail.com"
+        />
+        <br />
+        <br />
+        <label for="user-pwd-field">Please Enter your Password</label>
+        <input 
+          type="password"
+          name="user-email-field" 
+          value="" 
+          id="user-email-field"
+          placeholder="********"
+        />
+
+        <hr />
+        <br />
+        <br />
+        <br />
+
+        <!--Checkboxes-->
+        <p> Choose your fav fruit: </p>
+        <input 
+          type="checkbox"
+          name="apple" 
+          value="apple" 
+          id="apple"
+        />
+        <label for="apple">Apple</label>
+       <input 
+          type="checkbox"
+          name="orange" 
+          value="orange" 
+          id="orange"
+        />
+        <label for="orange">Orange</label>
+        <input 
+          type="checkbox"
+          name="kiwi" 
+          value="kiwi" 
+          id="kiwi"
+          checked 
+        />
+        <label for="kiwi">Kiwi</label>
+      <hr />
+
+      <br />
+      <br />
+      <br />
+      <!--There are other types of input please practice them on your home:
+       type:text
+       type:date/datetime/datetimelocal
+       type:file
+       type:image
+       type:btn <not used often -->
+
+        <!--Radio button=> give us the chance to choose only one option in this case 
+          we use the same name but different values if we want to create radio button using check box-->
+        <p>Pick one sport from the following options</p>
+
+        <input type="radio" name="sports" id="football" value="football" />
+        <label for="football">Football</label>
+
+        <input type="radio" name="sports" id="volleyball" value="volleyball" />
+        <label for="volleyball">Volleyball</label>
+
+        <input type="radio" name="sports" id="hockey" value="hockey" />
+        <label for="hockey">Hockey</label>
+
+        <!--submission BUTTON-->
+        <button type="submit">SUBMIT</button>
+        <br />
+        <br />
+
+         <!--menu BUTTON-->
+        <button type="menu">MENU</button>
+        <hr />
+        <br />
+        <br /> 
+               <!--Next class date: 01/ /24-->
+        <!--How to create tables in html-->
+        <!--semmantic html tags : very important for a good html developer:.-->
+        <br />
+        <br />
+        <br />
+        <br />
+    </form>
+
+<br />
+<br />
+
+  </body>
+</html>
